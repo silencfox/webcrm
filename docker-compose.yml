@@ -1,0 +1,9 @@
+services:
+  webrcm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webrcm-container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
